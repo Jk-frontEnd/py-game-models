@@ -34,7 +34,7 @@ def main() -> None:
                         defaults={"bonus": skill.get("bonus")}
                     )
 
-            player_instance = Player.objects.create(
+            Player.objects.create(
                 nickname=player,
                 email=info["email"],
                 bio=info["bio"],
